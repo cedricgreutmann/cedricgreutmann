@@ -32,13 +32,14 @@ body {
 
 .content 
 {
-  flex: 1;
+	flex: 1;
   padding: 30px;
   background: #eee;
   box-shadow: 0 0 5px rgba(0,0,0,1);
   transform: translate3d(0,0,0);
   transition: transform .3s;
 }
+
 
 .content.isOpen 
 {
@@ -49,6 +50,32 @@ body {
 {
 	flex: 1;
 }
+
+.imgmain
+{
+	flex: 1;
+	justify-content: space-around;
+}
+
+.workcats
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px;
+}
+
+.cat
+{
+	flex: 1;
+	margin: 5px;
+}
+
+img{
+	width: 100%;
+	max-width: 960px;
+}
+
+
 .button {
   cursor: pointer;
 }
