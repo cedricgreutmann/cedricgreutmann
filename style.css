@@ -13,11 +13,14 @@ html, body {
 
 body {
   font: 600 12px/1 'Open Sans', sans-serif;
-  color: #333;
-  background: #333;
+  color: #182E45;
+  background: #182E45;
   overflow-x: hidden;
 }
 
+
+
+/*SIDEBAR MENU NEEDED CLASSES*/
 .wrapper 
 {
   display: flex;
@@ -38,6 +41,7 @@ body {
   box-shadow: 0 0 5px rgba(0,0,0,1);
   transform: translate3d(0,0,0);
   transition: transform .3s;
+  z-index: 1;
 }
 
 
@@ -46,6 +50,17 @@ body {
   transform: translate3d(220px,0,0);
 }
 
+.button 
+{
+  cursor: pointer;
+}
+
+.button:before {
+  content: '\f0c9';
+  font: 42px fontawesome;
+}
+
+/*Added Classes for indivdual Pages*/
 .mainTitle
 {
 	flex: 1;
@@ -68,24 +83,51 @@ body {
 {
 	flex: 1;
 	margin: 5px;
+	position: relative;
 }
 
-img{
+img
+{
 	width: 100%;
 	max-width: 960px;
 }
 
-
-.button {
-  cursor: pointer;
+/*Overlay Images Catagories*/
+.overlay
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #2a2a2a;
 }
 
-.button:before {
-  content: '\f0c9';
-  font: 42px fontawesome;
+.overlaytext
+{
+	color: white;
+  font-size: 20px;
+  position: absolute;
+  border: solid 1px lightgrey;
+  padding: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+ 
 }
 
-/* Demo Navigation */
+.cat:hover .overlay {
+  opacity: .9;
+
+}
+
+
+/* Nav Sidebar */
 
 .title {
   font-size: 16px;
@@ -95,7 +137,7 @@ img{
   letter-spacing: 7px;
   color: #eee;
   border-bottom: 1px solid #222;
-  background: #2a2a2a;
+  background: #0A182B;
 }
 
 .nav li a {
@@ -114,25 +156,20 @@ img{
   left: 20px;
 }
 
-.nav li:nth-child(1) a:before { content: '\f00a'; }
-.nav li:nth-child(2) a:before { content: '\f012'; }
-.nav li:nth-child(3) a:before { content: '\f0e8'; }
-.nav li:nth-child(4) a:before { content: '\f0c3'; }
-.nav li:nth-child(5) a:before { content: '\f022'; }
-.nav li:nth-child(6) a:before { content: '\f115'; }
-.nav li:nth-child(7) a:before { content: '\f085'; }
-.nav li:nth-child(8) a:before { content: '\f023'; left: 23px; }
+.nav li:nth-child(1) a:before { content: '\f007'; }
+.nav li:nth-child(2) a:before { content: '\f187'; }
+.nav li:nth-child(3) a:before { content: '\f003'; }
 
 .nav li a:hover {
-  background: #444;
+  background: #2A5078;
 }
 
 .nav li a.active {
   box-shadow: inset 5px 0 0 #5b5, inset 6px 0 0 #222;
-  background: #444;
+  background: #2A5078;
 }
 
-/* Demo Description */
+/* Desc. */
 
 h1 {
   margin: 25px 0 15px;
