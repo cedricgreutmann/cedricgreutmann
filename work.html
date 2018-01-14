@@ -2,6 +2,17 @@
 <head>
 	<title>Cedric Greutmann</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		 <script type="text/javascript">
+		 		$(document).ready(function() {
+		  		$('.button').on('click', function() {
+		    	$('.content').toggleClass('isOpen');
+		  		});
+			});
+		 </script>
+		<script src="lightbox2-master/dist/js/lightbox.js"></script>
+
 </head>
 <body>
  <div class="wrapper">
@@ -16,10 +27,98 @@
  
  <div class="content isOpen">
  	<a class="button"></a>
- 	<div class="mainTitle">
+<!--  	<div class="mainTitle">
 	 	<h1>Work</h1>
+	</div> -->
+	<div class="subTitle">
+	 	<h1>Website Design/Development</h1>
+	</div>	
+	<div class="projWrapper">
+		<div class="projectInfo">
+			<div class="projectTitle"><h3>Cork and Board - Wine and Cheese Pairings</h3>
+			</div>
+			<div class="projectAbout"><h4>About</h4><br><p>A project created in my MSc Design and Digital Media program at University of Edinburgh. The main aim here was gaining familiarity with dynamic pages. Creating databases and making websites display information from said database. Additionally as extra credit we also integrated a user account system with logins, profile pictures. This feature was to be expanded, but was not completed due to lack of time.
+			</BR></BR>This was done through PHP and MySQL. For the design of the site Bootstrap framework was used, allowing for responsive design workflow.</p>
+			</div>
+			<div class="projectRoles"><h4>Roles</h4><br><p>HTML, CSS coding for site using Bootstrap framework. Also coded all backend (MYSQL and PHP)</p></div>
+			<div class="projectUrl"><h4>Link</h4><br><a href="https://playground.eca.ed.ac.uk/~s1672752/beta/">Site Link</a></div>
+		</div>
+		<div class="projectShow">
+			<div><a href="img/cb_1.png" data-lightbox="cb_1" data-title="Home Page of Site"><img  src="img/cb_1.png"></a></div>
+			<div><a href="img/cb_2.png" data-lightbox="cb_2" data-title="Home Page of Site"><img  src="img/cb_2.png"></a></div>
+			<div><a href="img/cb_3.png" data-lightbox="cb_3" data-title="Home Page of Site"><img  src="img/cb_3.png"></a></div>
+			<div><a href="img/cb_4.png" data-lightbox="cb_4" data-title="Home Page of Site"><img  src="img/cb_4.png"></a></div>
+		</div>
 	</div>
-	<div class="workcats">
+		<div class="projWrapper">
+		<div class="projectInfo">
+			<div class="projectTitle"><h3>IronZoo Productions Website and Poster</h3>
+			</div>
+			<div class="projectAbout"><h4>About</h4><br><p>For this pieces I was part of IronZoo Productions advertisement team. This small, student run productions company, needed a online presence besides their Facebook page. Giving them more of a professional outward face for potential clients.
+			<br><br>
+			The work consisted of a main company page, I also created a specific page for their newest production Chronos. For specific info about the series and particularly info on the premiere of the web series. Alongside this I developed a poster for the premiere of the series on Campus.
+			<br><br>
+			The site was more of a static page, meant to give information to visitors about the company, the members and their newest project Chronos.</p>
+			</div>
+			<div class="projectRoles"><h4>Roles</h4><br><p>HTML, CSS coding for site using Bootstrap framework. Also coded all backend (MYSQL and PHP)</p></div>
+			<div class="projectUrl"><h4>Link</h4><br><a href="https://playground.eca.ed.ac.uk/~s1672752/beta/">Site Link</a></div>
+		</div>
+		<div class="projectShow">
+			<div><a href="img/ironzoo_1.jpg" data-lightbox="ironzoo_1" data-title="Home Page of Site"><img  src="img/ironzoo_1.jpg"></a></div>
+			<div><a href="img/ironzoo_2.jpg" data-lightbox="ironzoo_2" data-title="Home Page of Site"><img  src="img/ironzoo_2.jpg"></a></div>
+			<div><a href="img/ironzoo_3.png" data-lightbox="ironzoo_3" data-title="Home Page of Site"><img  src="img/ironzoo_3.png"></a></div>
+			<div><a href="img/ironzoo_4.png" data-lightbox="ironzoo_4" data-title="Home Page of Site"<img  src="img/ironzoo_4.png"></a></div>
+			<div><a href="img/ironzoo_5.png" data-lightbox="ironzoo_5" data-title="Home Page of Site"><img  src="img/ironzoo_5.png"></a></div>
+		</div>
+	</div>
+		
+	<div class="subTitle">
+	 	<h1>3D/VR/Video Game</h1>
+	</div>
+	<div class="projWrapper">
+		<div class="projectInfo">
+			<div class="projectTitle"><h3>Historic Lens: Edinburgh VR</h3>
+			</div>
+			<div class="projectAbout"><h4>About</h4><br><p>In this project I wanted to explore and create a VR experience. Something that can also teach the users something new. I created a historic map, showing how the city of Edinburgh has grown through three different time periods. This experience is based off a map found online in the National Library archives. This map was a combination of different maps, with color coded streets and buildings to show when certain areas were built.
+			<br><br>
+			I used this map and traced abstract 3D models off of it. to create the basic layout of the city. To add to the map I then created more detailed models of certain buildings, which the user can pick up and investigate closer.
+			<br><br>
+			The 3D assets were created in Maya 2016, and textured in substance painter. I finally took the models and programmed all the VR experience in the Unity game engine.</p>
+			</div>
+			<div class="projectRoles"><h4>Roles</h4><br><p>HTML, CSS coding for site using Bootstrap framework. Also coded all backend (MYSQL and PHP)</p></div>
+			<div class="projectUrl"><h4>Link</h4><br><a href="https://www.youtube.com/watch?v=qtj-u4eglg0&feature=youtu.be">Video Link </a></div>
+		</div>
+		<div class="projectShow">
+			<div><a href="img/vr_1.jpg" data-lightbox="vr_1" data-title="Home Page of Site"><img  src="img/vr_1.jpg"></a></div>
+			<div><a href="img/vr_2.jpg" data-lightbox="vr_2" data-title="Home Page of Site"><img  src="img/vr_2.jpg"></a></div>
+		</div>
+	</div>
+	<div class="subTitle">
+	 	<h1>Visual Design</h1>
+	</div>
+	<div class="projWrapper">
+		<div class="projectInfo">
+			<div class="projectTitle"><h3>Concept Currency</h3>
+			</div>
+			<div class="projectAbout"><h4>About</h4><br><p>Here I was creating a new design concept for a future world, that had been flooded by effects of global warming. The regulated dollar would be the world wide currency, and therefore need to mean something to all people on the planet.
+			<br><br>
+			These designs included notes for 50, 100, 500 and 1000. Each of the notes connected to a theme. 50 showing world piece, 100 renewable energy, 500 representing Asian world wonders, and finally 1000 representing European world wonders. The historical buildings notes were supposed to represent potentially lost monumental buildings after the flooding. 
+			<br><br>
+			These notes were mainly created with Photoshop, using images and fractals gathered from the web, then blended together. The symbols were created in Illustrator.</p>
+			</div>
+			<div class="projectRoles"><h4>Roles</h4><br><p>	Designer, created with Illustrator and Photoshop</p></div>
+			<!-- <div class="projectUrl"><h4>Link</h4><br><a href="https://www.youtube.com/watch?v=qtj-u4eglg0&feature=youtu.be">Site Link</a></div> -->
+		</div>
+		<div class="projectShow">
+			<div><a href="img/curr_1.png" data-lightbox="curr_1" data-title="Home Page of Site"><img  src="img/curr_1.png"></a></div>
+			<div><a href="img/curr_2.png" data-lightbox="curr_2" data-title="Home Page of Site"><img  src="img/curr_2.png"></a></div>
+			<div><a href="img/curr_3.png" data-lightbox="curr_3" data-title="Home Page of Site"><img  src="img/curr_3.png"></a></div>
+			<div><a href="img/curr_4.png" data-lightbox="curr_4" data-title="Home Page of Site"><img  src="img/curr_4.png"></a></div>
+		</div>
+	</div>
+	</div>
+
+	<!-- <div class="workcats">
 		<div class="cat">
 		<img class="catimages" src="img/cat1.jpg">
 			<div class="overlay">
@@ -45,13 +144,5 @@
  	
  </div>
 </div>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
- <script type="text/javascript">
- 		$(document).ready(function() {
-  		$('.button').on('click', function() {
-    	$('.content').toggleClass('isOpen');
-  		});
-	});
- </script>
 </body>
 </html>

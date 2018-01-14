@@ -18,7 +18,27 @@ body {
   overflow-x: hidden;
 }
 
+a
+{
+	color: red;
+}
 
+p
+{
+	font-size: 13px;
+}
+
+h4
+{
+	font-size: 16px;
+}
+
+
+/*img
+{
+	width: 100%;
+	max-width: 400px;
+}*/
 
 /*SIDEBAR MENU NEEDED CLASSES*/
 .wrapper 
@@ -35,13 +55,15 @@ body {
 
 .content 
 {
-	flex: 1;
+  display: flex;
+  flex-direction: column;
   padding: 30px;
   background: #eee;
   box-shadow: 0 0 5px rgba(0,0,0,1);
   transform: translate3d(0,0,0);
   transition: transform .3s;
   z-index: 1;
+  width: 100%
 }
 
 
@@ -53,6 +75,8 @@ body {
 .button 
 {
   cursor: pointer;
+  color: #182E45;
+  width: 4%;
 }
 
 .button:before {
@@ -60,75 +84,73 @@ body {
   font: 42px fontawesome;
 }
 
-/*Added Classes for indivdual Pages*/
-.mainTitle
-{
-	flex: 1;
-}
-
-.imgmain
-{
-	flex: 1;
-	justify-content: space-around;
-}
-
-.workcats
+/*Added Classes for project on Work page*/
+.projWrapper
 {
 	display: flex;
-	flex-wrap: wrap;
-	margin: 20px;
+	justify-content: space-between;
 }
 
-.cat
+.subTitle
+{
+	margin-top: 10px;
+}
+
+.projectInfo
 {
 	flex: 1;
-	margin: 5px;
-	position: relative;
+	box-sizing: border-box;
+	width: 30%;
+	padding: 6px;
+	background-color: #ccc;
+	margin-top: 5px;
+	align-self: flex-start;
 }
 
-img
+.projectTitle
 {
-	width: 100%;
-	max-width: 960px;
+	padding: 5px;
+
 }
 
-/*Overlay Images Catagories*/
-.overlay
+.projectRoles
 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #2a2a2a;
+	padding: 5px;
+
 }
 
-.overlaytext
+.projectURL
 {
-	color: white;
-  font-size: 20px;
-  position: absolute;
-  border: solid 1px lightgrey;
-  padding: 5px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
- 
-}
-
-.cat:hover .overlay {
-  opacity: .9;
+	padding: 5px;
 
 }
 
+.projectAbout
+{
+	padding: 5px;
+	text-align: justify;
+
+}
+
+.projectShow
+{
+	display: flex;
+	box-sizing: border-box;
+	padding: 6px;
+	width: 60%;
+}
+
+.projectShow img
+{
+	max-width: 90%;
+}
+
+.projectShow a:hover
+{
+	cursor: pointer;
+}
 
 /* Nav Sidebar */
-
 .title {
   font-size: 16px;
   line-height: 50px;
@@ -147,6 +169,7 @@ img
   font-size: 12px;
   color: #eee;
   border-bottom: 1px solid #222;
+  text-decoration: none;
 }
 
 .nav li a:before {
