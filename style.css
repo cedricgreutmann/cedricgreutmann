@@ -7,38 +7,67 @@
   box-sizing: border-box;
 }
 
-html, body {
+html, body 
+{
   height: 100vh;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 100;
 }
 
-body {
-  font: 600 12px/1 'Open Sans', sans-serif;
-  color: #182E45;
+body 
+{
+
+  color: black;
   background: #182E45;
   overflow-x: hidden;
 }
 
 a
 {
-	color: red;
+	color: #292982;
 }
 
 p
 {
-	font-size: 13px;
+	font-size: 16px;
 }
 
 h4
 {
-	font-size: 16px;
+	font-size: 19px;
 }
 
+/* Desc. */
 
-/*img
+h1 
 {
+  margin: 25px 0 15px;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+h2 
+{
+  font-size: 18px;
+  font-weight: 400;
+  color: #999;
+}
+
+ul
+{
+	font-size: 18px;
+	list-style-type: none;
+}
+
+footer
+{
+	font-size: 12px;
 	width: 100%;
-	max-width: 400px;
-}*/
+	bottom: 2px;
+	left: 75%;
+	position: fixed;
+	font-style: italic;
+}
 
 /*SIDEBAR MENU NEEDED CLASSES*/
 .wrapper 
@@ -47,10 +76,24 @@ h4
   min-height: 100%;
 }
 
+.contactme
+{
+	margin: 20px;
+	padding: 20px;
+	background-color: #ccc;
+	width: 50%;
+}
+
+.contactme h3
+{
+	color: white;
+}
 .sidebar 
 {
-  position: absolute;
+  position: fixed;
+  left: 0;
   width: 220px;
+
 }
 
 .content 
@@ -58,14 +101,15 @@ h4
   display: flex;
   flex-direction: column;
   padding: 30px;
-  background: #eee;
+  /*background: #eee;*/
+  background-color: whitesmoke;
   box-shadow: 0 0 5px rgba(0,0,0,1);
   transform: translate3d(0,0,0);
   transition: transform .3s;
   z-index: 1;
-  width: 100%
+  width: 100%;
+  overflow-y: auto;
 }
-
 
 .content.isOpen 
 {
@@ -84,11 +128,103 @@ h4
   font: 42px fontawesome;
 }
 
-/*Added Classes for project on Work page*/
+
+/* Nav Sidebar */
+.title {
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: #eee;
+  border-bottom: 1px solid #222;
+  background: #0A182B;
+}
+
+.title a
+{
+	color: white;
+	text-decoration: none;
+}
+
+.nav li a {
+  position: relative;
+  display: block;
+  padding: 20px 0 20px 50px;
+  font-size: 15px;
+  color: #eee;
+  border-bottom: 1px solid #222;
+  text-decoration: none;
+}
+
+.nav li a:before {
+  font: 14px fontawesome;
+  position: absolute;
+  top: 19px;
+  left: 20px;
+}
+
+.nav li:nth-child(1) a:before { content: '\f007'; }
+.nav li:nth-child(2) a:before { content: '\f187'; }
+.nav li:nth-child(3) a:before { content: '\f003'; }
+
+.nav li a:hover {
+  background: #2A5078;
+}
+
+.nav li a.active {
+  box-shadow: inset 5px 0 0 #5b5, inset 6px 0 0 #222;
+  background: #2A5078;
+}
+
+/*About Me page*/
+.infomeWrapper
+{
+	display: flex;
+	background-color: white;
+}
+
+#infome_insidewrapper
+{
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+
+}
+
+#aboutimg
+{
+	height: 500px;
+	margin: 20px;
+}
+
+.infome
+{
+	flex: 1;
+	margin: 20px;
+
+}
+
+.infome ul li
+{
+	margin: 5px;
+}
+
+#aboutmeText
+{
+	flex: 2;
+	margin: 10px;
+	text-align: justify;
+}
+
+
+/*Work page*/
 .projWrapper
 {
 	display: flex;
 	justify-content: space-between;
+	background-color: #1a3354;
+	padding: 10px;
 }
 
 .subTitle
@@ -102,7 +238,7 @@ h4
 	box-sizing: border-box;
 	width: 30%;
 	padding: 6px;
-	background-color: #ccc;
+	background-color: white;
 	margin-top: 5px;
 	align-self: flex-start;
 }
@@ -110,6 +246,8 @@ h4
 .projectTitle
 {
 	padding: 5px;
+	font-weight: bold;
+	font-size: 17px;
 
 }
 
@@ -150,58 +288,24 @@ h4
 	cursor: pointer;
 }
 
-/* Nav Sidebar */
-.title {
-  font-size: 16px;
-  line-height: 50px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 7px;
-  color: #eee;
-  border-bottom: 1px solid #222;
-  background: #0A182B;
-}
+@media only screen and (max-width: 900px) {
+	.projectShow
+	{
+		flex-wrap: wrap;
+	}
 
-.nav li a {
-  position: relative;
-  display: block;
-  padding: 20px 0 20px 50px;
-  font-size: 12px;
-  color: #eee;
-  border-bottom: 1px solid #222;
-  text-decoration: none;
-}
+	.projWrapper
+	{
+		flex-direction: column;
+	}
 
-.nav li a:before {
-  font: 14px fontawesome;
-  position: absolute;
-  top: 19px;
-  left: 20px;
-}
+	.projectInfo
+	{
+		width: 100%;
+	}
 
-.nav li:nth-child(1) a:before { content: '\f007'; }
-.nav li:nth-child(2) a:before { content: '\f187'; }
-.nav li:nth-child(3) a:before { content: '\f003'; }
-
-.nav li a:hover {
-  background: #2A5078;
-}
-
-.nav li a.active {
-  box-shadow: inset 5px 0 0 #5b5, inset 6px 0 0 #222;
-  background: #2A5078;
-}
-
-/* Desc. */
-
-h1 {
-  margin: 25px 0 15px;
-  font-size: 28px;
-  font-weight: 400;
-}
-
-h2 {
-  font-size: 18px;
-  font-weight: 400;
-  color: #999;
+	.infomeWrapper
+	{
+		flex-wrap: wrap;
+	}
 }
