@@ -239,7 +239,6 @@ footer
 	width: 30%;
 	padding: 6px;
 	background-color: white;
-	margin-top: 5px;
 	align-self: flex-start;
 }
 
@@ -276,11 +275,45 @@ footer
 	box-sizing: border-box;
 	padding: 6px;
 	width: 60%;
+	align-items: center;
+	background-color: rgba(212, 212, 212, .8);
+	flex: 2;
+
+}
+
+.projectShowVid
+{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	background-color: rgba(212, 212, 212, .8);
+	flex: 2;
+	align-items: center; 
+
+}
+
+.itemsShow
+{
+	width: 120%;
+}
+
+.itemsVid
+{
+}
+
+.itemVidpics
+{
+	display: flex;
 }
 
 .projectShow img
 {
-	max-width: 90%;
+	max-width: 100%;
+}
+
+.projectShowVid img
+{
+	max-width: 100%;
 }
 
 .projectShow a:hover
@@ -288,15 +321,29 @@ footer
 	cursor: pointer;
 }
 
-@media only screen and (max-width: 900px) {
-	.projectShow
-	{
-		flex-wrap: wrap;
-	}
-
+@media only screen and (max-width: 700px) 
+{
+	
 	.projWrapper
 	{
 		flex-direction: column;
+	}
+
+	.projectShow
+	{
+		flex-wrap: wrap;
+		align-self: center;
+		flex: none;
+	}
+
+	.projectShowVid
+	{
+		flex: none;
+	}
+
+	.projectShow img
+	{
+		margin-top: 10px;
 	}
 
 	.projectInfo
