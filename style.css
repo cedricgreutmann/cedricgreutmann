@@ -63,9 +63,8 @@ footer
 {
 	font-size: 12px;
 	width: 100%;
-	bottom: 2px;
-	left: 75%;
-	position: fixed;
+	margin-top: 20px;
+/*	position: fixed;*/
 	font-style: italic;
 }
 
@@ -90,10 +89,14 @@ footer
 }
 .sidebar 
 {
-  position: fixed;
+/*  position: fixed;
   left: 0;
   width: 220px;
 
+*/
+position: fixed;
+width: 13%;
+/*	flex: 1 100px;*/
 }
 
 .content 
@@ -103,29 +106,19 @@ footer
   padding: 30px;
   /*background: #eee;*/
   background-color: whitesmoke;
-  box-shadow: 0 0 5px rgba(0,0,0,1);
+/*  box-shadow: 0 0 5px rgba(0,0,0,1);
   transform: translate3d(0,0,0);
   transition: transform .3s;
-  z-index: 1;
-  width: 100%;
-  overflow-y: auto;
+  z-index: 1;*/
+/*  overflow-y: auto;*/
+	flex: 10;
+	position: relative;
+	margin-left: 13%;
 }
 
 .content.isOpen 
 {
   transform: translate3d(220px,0,0);
-}
-
-.button 
-{
-  cursor: pointer;
-  color: #182E45;
-  width: 4%;
-}
-
-.button:before {
-  content: '\f0c9';
-  font: 42px fontawesome;
 }
 
 
@@ -275,9 +268,10 @@ footer
 	box-sizing: border-box;
 	padding: 6px;
 	width: 60%;
-	align-items: center;
+	/*align-items: center;*/
 	background-color: rgba(212, 212, 212, .8);
 	flex: 2;
+	flex-wrap: nowrap;
 
 }
 
@@ -299,6 +293,7 @@ footer
 
 .itemsVid
 {
+	margin: 15%;
 }
 
 .itemVidpics
@@ -306,6 +301,37 @@ footer
 	display: flex;
 }
 
+.vertimg
+{
+	width: 25%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+}
+
+.showcase
+{
+	width: 100%;
+}
+
+.vertimg:nth-child(1)
+{
+	background-image: url("img/cb_1.png");
+}
+
+.vertimg:nth-child(2)
+{
+	background-image: url("img/cb_2.png");
+}
+.vertimg:nth-child(3)
+{
+	background-image: url("img/cb_3.png");
+}
+.vertimg:nth-child(4)
+{
+	background-image: url("img/cb_4.png");
+}
 .projectShow img
 {
 	max-width: 100%;
@@ -321,7 +347,7 @@ footer
 	cursor: pointer;
 }
 
-@media only screen and (max-width: 700px) 
+@media only screen and (max-width: 1150px) 
 {
 	
 	.projWrapper
@@ -354,5 +380,35 @@ footer
 	.infomeWrapper
 	{
 		flex-wrap: wrap;
+	}
+	.content
+	{
+		box-shadow: 0 0 5px rgba(0,0,0,1);
+  		transform: translate3d(0,0,0);
+  		transition: transform .3s;
+  		z-index: 1;
+  		width: 100%;
+  		flex: 1;
+  		margin-left: 0;
+	}
+
+.button 
+{
+  cursor: pointer;
+  color: #182E45;
+  width: 4%;
+}
+
+.button:before {
+  content: '\f0c9';
+  font: 42px fontawesome;
+}
+
+
+	.sidebar
+	{
+		position: fixed;
+  		left: 0;
+  		width: 220px;
 	}
 }
