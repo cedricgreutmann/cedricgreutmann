@@ -384,8 +384,7 @@ width: 13%;
 	.content
 	{
 		box-shadow: 0 0 5px rgba(0,0,0,1);
-  		transition: transform .3s;
-  		transition: all 1s ease-in-out;
+  		transition: all .7s ease-in-out;
   		margin-left: 0px;
   		width: 100%;
   		flex: 1;
