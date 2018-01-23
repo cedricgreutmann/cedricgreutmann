@@ -68,6 +68,8 @@ footer
 	font-style: italic;
 }
 
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*SIDEBAR MENU NEEDED CLASSES*/
 .wrapper 
 {
@@ -116,12 +118,9 @@ width: 13%;
 	margin-left: 13%;
 }
 
-.content.isOpen 
-{
-  transform: translate3d(220px,0,0);
-}
 
 
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* Nav Sidebar */
 .title {
   font-size: 16px;
@@ -170,6 +169,14 @@ width: 13%;
   background: #2A5078;
 }
 
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*Index Home Page*/
+.imgmain
+{
+	max-width: 100%;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*About Me page*/
 .infomeWrapper
 {
@@ -210,7 +217,7 @@ width: 13%;
 	text-align: justify;
 }
 
-
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*Work page*/
 .projWrapper
 {
@@ -259,7 +266,12 @@ width: 13%;
 {
 	padding: 5px;
 	text-align: justify;
+}
 
+
+.projectRoles, .projectURL, .projectAbout h4
+{
+	font-style: italic;
 }
 
 .projectShow
@@ -301,37 +313,11 @@ width: 13%;
 	display: flex;
 }
 
-.vertimg
-{
-	width: 25%;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	
-}
-
 .showcase
 {
 	width: 100%;
 }
 
-.vertimg:nth-child(1)
-{
-	background-image: url("img/cb_1.png");
-}
-
-.vertimg:nth-child(2)
-{
-	background-image: url("img/cb_2.png");
-}
-.vertimg:nth-child(3)
-{
-	background-image: url("img/cb_3.png");
-}
-.vertimg:nth-child(4)
-{
-	background-image: url("img/cb_4.png");
-}
 .projectShow img
 {
 	max-width: 100%;
@@ -347,6 +333,10 @@ width: 13%;
 	cursor: pointer;
 }
 
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*Media queries*/
 @media only screen and (max-width: 1150px) 
 {
 	
@@ -381,29 +371,34 @@ width: 13%;
 	{
 		flex-wrap: wrap;
 	}
+
 	.content
 	{
 		box-shadow: 0 0 5px rgba(0,0,0,1);
-  		transform: translate3d(0,0,0);
   		transition: transform .3s;
-  		z-index: 1;
+  		transition: all 1s ease-in-out;
+  		margin-left: 200px;
   		width: 100%;
   		flex: 1;
-  		margin-left: 0;
 	}
 
-.button 
-{
-  cursor: pointer;
-  color: #182E45;
-  width: 4%;
-}
+	.content.isOpen 
+	{
+	  /*transform: translate3d(220px,0,0);*/
+	  margin-left: 0px;
+	}
 
-.button:before {
-  content: '\f0c9';
-  font: 42px fontawesome;
-}
+	.button 
+	{
+	  cursor: pointer;
+	  color: #182E45;
+	  width: 4%;
+	}
 
+	.button:before {
+	  content: '\f0c9';
+	  font: 42px fontawesome;
+	}
 
 	.sidebar
 	{
