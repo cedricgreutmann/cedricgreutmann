@@ -256,10 +256,24 @@ width: 13%;
 
 }
 
+.projectRoles h4
+{
+	font-style: italic;
+}
+
 .projectURL
 {
 	padding: 5px;
+}
 
+.projectURL h4
+{
+	font-style: italic;
+}
+
+.projectAbout h4
+{
+	font-style: italic;
 }
 
 .projectAbout
@@ -268,12 +282,7 @@ width: 13%;
 	text-align: justify;
 }
 
-
-.projectRoles, .projectURL, .projectAbout h4
-{
-	font-style: italic;
-}
-
+/**/
 .projectShow
 {
 	display: flex;
@@ -377,7 +386,7 @@ width: 13%;
 		box-shadow: 0 0 5px rgba(0,0,0,1);
   		transition: transform .3s;
   		transition: all 1s ease-in-out;
-  		margin-left: 200px;
+  		margin-left: 0px;
   		width: 100%;
   		flex: 1;
 	}
@@ -385,7 +394,7 @@ width: 13%;
 	.content.isOpen 
 	{
 	  /*transform: translate3d(220px,0,0);*/
-	  margin-left: 0px;
+	  margin-left: 200px;
 	}
 
 	.button 
