@@ -240,6 +240,7 @@ width: 13%;
 	padding: 6px;
 	background-color: white;
 	align-self: flex-start;
+	border-radius: 2px;
 }
 
 .projectTitle
@@ -289,10 +290,12 @@ width: 13%;
 	box-sizing: border-box;
 	padding: 6px;
 	width: 60%;
-	/*align-items: center;*/
+	align-items: center;
 	background-color: rgba(212, 212, 212, .8);
 	flex: 2;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-radius: 2px;
 
 }
 
@@ -307,14 +310,41 @@ width: 13%;
 
 }
 
-.itemsShow
+.itemsShow_2
 {
-	width: 120%;
+	width: 48%;
+	padding-left: 1%;
+}
+
+
+.itemsShow_4
+{
+	width: 49%;
+	padding-left: 1%;
+}
+
+.itemsShow_4_web
+{
+	width: 25%;
+	padding-left: 1%;
+}
+
+.itemsShow_4_large
+{
+	width: 25%;
+	padding-left: 1%;
+}
+
+
+.itemsShow_5
+{
+	width: 33%;
+	padding-left: 1%;
 }
 
 .itemsVid
 {
-	margin: 15%;
+/*	margin: 15%;*/
 }
 
 .itemVidpics
@@ -359,12 +389,25 @@ width: 13%;
 		flex-wrap: wrap;
 		align-self: center;
 		flex: none;
+		width: 100%;
 	}
 
 	.projectShowVid
 	{
 		flex: none;
 	}
+
+	.itemsShow_4, .itemsShow_4_web, .itemsShow_4_large, .itemsShow_5, .itemsShow_2
+	{
+		width: 100%;
+		padding-left: 1%;
+	}
+
+/*	.itemsShow_2
+	{
+		width: 100%;
+		padding-left: 1%;
+	}*/
 
 	.projectShow img
 	{
