@@ -7,14 +7,14 @@
   box-sizing: border-box;
 }
 
-html, body 
+html, body
 {
   height: 100vh;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 100;
 }
 
-body 
+body
 {
 
   color: black;
@@ -39,14 +39,14 @@ h4
 
 /* Desc. */
 
-h1 
+h1
 {
   margin: 25px 0 15px;
   font-size: 28px;
   font-weight: 400;
 }
 
-h2 
+h2
 {
   font-size: 18px;
   font-weight: 400;
@@ -71,7 +71,7 @@ footer
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*SIDEBAR MENU NEEDED CLASSES*/
-.wrapper 
+.wrapper
 {
   display: flex;
   min-height: 100%;
@@ -89,7 +89,7 @@ footer
 {
 	color: white;
 }
-.sidebar 
+.sidebar
 {
 /*  position: fixed;
   left: 0;
@@ -101,7 +101,7 @@ width: 13%;
 /*	flex: 1 100px;*/
 }
 
-.content 
+.content
 {
   display: flex;
   flex-direction: column;
@@ -306,7 +306,7 @@ width: 13%;
 	box-sizing: border-box;
 	background-color: rgba(212, 212, 212, .8);
 	flex: 2;
-	align-items: center; 
+	align-items: center;
 
 }
 
@@ -376,9 +376,9 @@ width: 13%;
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*Media queries*/
-@media only screen and (max-width: 1150px) 
+@media only screen and (max-width: 1150px)
 {
-	
+
 	.projWrapper
 	{
 		flex-direction: column;
@@ -433,13 +433,13 @@ width: 13%;
   		flex: 1;
 	}
 
-	.content.isOpen 
+	.content.isOpen
 	{
 	  /*transform: translate3d(220px,0,0);*/
 	  margin-left: 200px;
 	}
 
-	.button 
+	.button
 	{
 	  cursor: pointer;
 	  color: #182E45;
