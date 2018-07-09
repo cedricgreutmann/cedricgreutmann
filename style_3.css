@@ -5,7 +5,10 @@
 body, html
 {
   font-family: 'Josefin Sans', sans-serif;
-  min-width: 500px;
+  /* min-width: 500px; */
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .noscroll
@@ -17,6 +20,8 @@ nav
   background-color: transparent;
   box-shadow: none;
   display: block;
+  z-index: 2;
+  height: 100vh;
 }
 
 div
@@ -26,30 +31,29 @@ div
 
 .nav-full-header
 {
-  height: 100%;
-  min-width: 500px;
+  z-index: 2;
+
 }
 
 .nav-extended
 {
-  height: auto;
-  min-width: 500px;
+  z-index: 2;
 }
 
 .nav-header
 {
-  height: calc(100% - 128px);
-  min-width: 500px;
+  height: calc(100% - 140px);
+  z-index: 2;
 }
 
 nav.nav-extended .nav-wrapper
 {
-  /* min-width: 500px; */
+  z-index: 2;
 }
 
 .nav-extended
 {
-  width: 100%;
+  z-index: 2;
 }
 
 .db
@@ -57,6 +61,7 @@ nav.nav-extended .nav-wrapper
   max-width: 1200px;
   margin: 0 auto;
   width: 70%;
+  z-index: 2;
 }
 
 .de
@@ -64,6 +69,7 @@ nav.nav-extended .nav-wrapper
   text-align: center;
   margin: 0 auto;
   text-transform: uppercase;
+  z-index: 2;
 }
 
 .nav-background
@@ -74,14 +80,14 @@ nav.nav-extended .nav-wrapper
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: -1;
+  z-index: 1;
   opacity: .2;
-  min-width: 500px;
+  /* min-width: 500px; */
 }
 
 .img_bg
 {
-  background: url(asphalt-mountain-outdoors-119730.jpg) no-repeat center;
+  background: url(img/snowboard.jpg) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -94,17 +100,25 @@ nav.nav-extended .nav-wrapper
 .catagories
 {
   display: flex;
+  z-index: 2;
 }
 
 .catagorieswrapper
 {
-  min-width: 500px;
+  z-index: 10;
+  position: relative;
+  margin: 12px;
 }
-/* .port_wrapper
+
+
+#cat_dropdown
 {
-  width: 80%;
-  margin: 0 auto;
-} */
+  display: none;
+}
+.dropdown-content li>a, .dropdown-content li>span
+{
+  color: black;
+}
 
 .portfolio_grid
 {
@@ -112,7 +126,8 @@ nav.nav-extended .nav-wrapper
   /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   position: relative;
-  width: 100%;
+  /* width: 100%; */
+  z-index: 2;
 }
 
 .portfolio_item
@@ -282,7 +297,8 @@ nav.nav-extended .nav-wrapper
 {
   background-color: #182f45;
   display: none;
-  height: 50%;
+  position: relative;
+  z-index: 2;
 }
 
 .btn, .btn-large, .btn-small
@@ -298,6 +314,15 @@ nav.nav-extended .nav-wrapper
 .info_img
 {
   flex: 2;
+  display: flex;
+  justify-content: center;
+
+}
+
+#outsideWrapper
+{
+  display: flex;
+  flex-direction: column;
 }
 
 .infomeWrapper
@@ -333,6 +358,19 @@ nav.nav-extended .nav-wrapper
     align-items: center;
   }
 }
+
+@media only screen and (max-width: 425px) {
+  #cat_dropdown
+  {
+    display: block;
+  }
+
+  #cat_container
+  {
+    display: none;
+  }
+}
+
 
 /* @media only screen and (max-width: 999px) {
   .portfolio_grid
