@@ -4,8 +4,8 @@
 }
 body, html
 {
-  min-width: 400px;
   font-family: 'Josefin Sans', sans-serif;
+  min-width: 500px;
 }
 
 .noscroll
@@ -26,17 +26,30 @@ div
 
 .nav-full-header
 {
-  /* height: 100%; */
+  height: 100%;
+  min-width: 500px;
 }
 
 .nav-extended
 {
-  /* height: auto; */
+  height: auto;
+  min-width: 500px;
 }
 
 .nav-header
 {
   height: calc(100% - 128px);
+  min-width: 500px;
+}
+
+nav.nav-extended .nav-wrapper
+{
+  min-width: 500px;
+}
+
+.nav-extended
+{
+  width: 100%;
 }
 
 .db
@@ -63,17 +76,18 @@ div
   left: 0;
   z-index: -1;
   opacity: .2;
-  min-width: 300px;
+  min-width: 500px;
 }
 
 .img_bg
 {
-  background: url(img/snowboard.jpg) no-repeat center;
+  background: url(asphalt-mountain-outdoors-119730.jpg) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100%;
+  width: 100%;
 }
 
 
@@ -82,6 +96,10 @@ div
   display: flex;
 }
 
+.catagorieswrapper
+{
+  min-width: 500px;
+}
 /* .port_wrapper
 {
   width: 80%;
@@ -94,8 +112,7 @@ div
   /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   position: relative;
-  animation-duration: 3s;
-  animation-delay: 2s;
+  width: 100%;
 }
 
 .portfolio_item
@@ -264,12 +281,6 @@ div
 #aboutSidePanel
 {
   background-color: #182f45;
-  /* width: 40%; */
-  /* height: 100%; */
-  /* position: absolute; */
-  /* top: 0; */
-  /* left: 60%; */
-  /* bottom: 0; */
   display: none;
   height: 50%;
 }
@@ -308,10 +319,11 @@ div
   flex: 1;
   margin: 20px;
 }
-/*
-@media only screen and (max-width: 400px) {
-    html {
-    width: 100%;
+
+/* @media only screen and (max-width: 500px) {
+  .nav-background {
+    width: 150%;
+  }
 } */
 
 @media only screen and (max-width: 1255px) {
@@ -322,12 +334,12 @@ div
   }
 }
 
-@media only screen and (max-width: 999px) {
+/* @media only screen and (max-width: 999px) {
   .portfolio_grid
   {
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
-    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
     position: relative;
   }
-}
+} */
