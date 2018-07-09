@@ -44,7 +44,7 @@ div
 
 nav.nav-extended .nav-wrapper
 {
-  min-width: 500px;
+  /* min-width: 500px; */
 }
 
 .nav-extended

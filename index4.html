@@ -41,9 +41,9 @@
 				<div class="cat_container">
 					<ul class="catagories">
 						<li><a id="showAll" class="waves-effect waves-light btn-small">All</a></li>
-						<!-- <li><a id="showWebDev" class="waves-effect waves-light btn-small">Web Dev</a></li>
+						<li><a id="showWebDev" class="waves-effect waves-light btn-small">Web Dev</a></li>
 						<li><a id="showThreed" class="waves-effect waves-light btn-small">Game Design</a></li>
-						<li><a class="waves-effect waves-light btn-small">Visual</a></li> -->
+						<li><a class="waves-effect waves-light btn-small">Visual</a></li>
 					</ul>
 				</div>
 			</div>
@@ -247,15 +247,32 @@
 								window.scrollTo(0,0);
 				};
 				$("#about").click(function(){
-					if ($("#aboutSidePanel").is(':hidden')){
-						$(".portfolio_grid").hide();
-						$("#aboutSidePanel").show();
-						$("html, body").animate({ scrollTop: $(document).height() }, 800, "linear");
+					if(jQuery(window).width() > 1200) {
+						if ($("#aboutSidePanel").is(':hidden')){
+						 $(".portfolio_grid").hide();
+						 $("#aboutSidePanel").show();
+						 $("html, body").animate({ scrollTop: $(window).height()}, 800, "linear");
+					 }
+					 else {
+						 $("#aboutSidePanel").hide();
+						 $(".portfolio_grid").show();
+					 }
 					}
-					else {
-						$("#aboutSidePanel").hide();
-						$(".portfolio_grid").show();
+					else if(jQuery(window).width() < 1200){
+						if ($("#aboutSidePanel").is(':hidden')){
+						 $(".portfolio_grid").hide();
+						 $("#aboutSidePanel").show();
+						 var scrollSmall = $(window).height() - 100;
+						 console.log(scrollSmall);
+
+						 $("html, body").animate({ scrollTop: scrollSmall}, 800, "linear");
+					 }
+					 else {
+						 $("#aboutSidePanel").hide();
+						 $(".portfolio_grid").show();
+					 }
 					}
+
 				});
 				// $('.sidenav').sidenav();
 
