@@ -49,16 +49,16 @@
 						<a class='dropdown-trigger btn-small' href='#' data-target='catdrop'>Catagories</a>
 						<!-- Dropdown Structure -->
 						<ul id='catdrop' class='dropdown-content'>
-							<li><a id="showAll">All</a></li>
-							<li><a id="showWebDev">Web Dev</a></li>
-							<li><a id="showThreed">Game Design</a></li>
+							<li><a class="showAll">All</a></li>
+							<li><a class="showWebDev">Web Dev</a></li>
+							<li><a class="showThreed">Game Design</a></li>
 						</ul>
 					</div>
 					<div id="cat_container">
 					<ul class="catagories">
-						<li><a id="showAll" class="waves-effect waves-light btn-small">All</a></li>
-						<li><a id="showWebDev" class="waves-effect waves-light btn-small">Web Dev</a></li>
-						<li><a id="showThreed" class="waves-effect waves-light btn-small">Game Design</a></li>
+						<li><a class="showAll waves-effect waves-light btn-small">All</a></li>
+						<li><a class="showWebDev waves-effect waves-light btn-small">Web Dev</a></li>
+						<li><a class="showThreed waves-effect waves-light btn-small">Game Design</a></li>
 					</ul>
 				</div>
 			</div>
@@ -368,7 +368,7 @@
 						$("#port_full5").show().css('top', screenTop);
 					});
 
-					$("#showAll").click(function showAllCat()
+					$(".showAll").click(function showAllCat()
 					{
 						$(".portfolio_grid").show();
 						$("#aboutSidePanel").hide();
@@ -376,7 +376,7 @@
 					 $("html, body").animate({ scrollTop: $(document).height() }, 800, "linear");
 				 	});
 
-					$("#showWebDev").click(function showOnlyCat(web)
+					$(".showWebDev").click(function showOnlyCat(web)
 					{
 						$(".portfolio_grid").show();
 					$("#aboutSidePanel").hide();
@@ -385,7 +385,7 @@
 					 // console.log('test');
 				 	});
 
-					$("#showThreed").click(function showOnlyCat(threed)
+					$(".showThreed").click(function showOnlyCat(threed)
 					{
 						$(".portfolio_grid").show();
 					$("#aboutSidePanel").hide();
