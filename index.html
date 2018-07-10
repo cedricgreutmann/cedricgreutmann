@@ -261,9 +261,9 @@
 				// 	$("nav.nav-extended").css({height: $(window).height()});
 				// 	console.log($(window).height());
 				//  }
-				// window.onbeforeunload = function () {
-				// 				window.scrollTo(0,0);
-				// };
+				window.onbeforeunload = function () {
+								window.scrollTo(0,0);
+				};
 				$("#about").click(function(){
 					if(jQuery(window).width() > 1200) {
 						if ($("#aboutSidePanel").is(':hidden')){
