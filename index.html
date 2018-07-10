@@ -4,29 +4,409 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" src="jsmenu.js"></script>
+	<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="style_3.css"  media="screen,projection"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+	<!--Let browser know website is optimized for mobile-->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+	<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+	<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <!-- or -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+	<script>
+
+	</script>
 </head>
 <body>
- <div class="wrapper">
-  <div class="sidebar">
-  	<div class="title"><a href="index.html">Menu</a></div>
-	  	<ul class="nav">
-	  		<li><a href="aboutme.html">About Me</a></li>
-	  		<li><a href="work.html">Work</a></li>
-	  		<li><a href="aboutme.html">Contact</a></li>
-	  	</ul>
-  </div>
+	<section>
+		<nav class="nav-full-header nav-extended">
+			<div class="nav-background">
+				<div class="img_bg"></div>
+			</div>
+			<div class="nav-wrapper db">
+				<a href="#" class="brand-logo left">CG</a>
+				<ul id="nav-mobile" class="right">
+					<li><a id="about">About</a></li>
+				</ul>
+			</div>
+			<div class="nav-header valign-wrapper">
+				<div class="de">
+					<h1>I Make Things</h1>
+				</div>
+			</div>
+			<div class="catagorieswrapper">
+					<div id="cat_dropdown">
+					<!-- Dropdown Trigger -->
+						<a class='dropdown-trigger btn-small' href='#' data-target='catdrop'>Catagories</a>
+						<!-- Dropdown Structure -->
+						<ul id='catdrop' class='dropdown-content'>
+							<li><a class="showAll">All</a></li>
+							<li><a class="showWebDev">Web Dev</a></li>
+							<li><a class="showThreed">Game Design</a></li>
+						</ul>
+					</div>
+					<div id="cat_container">
+					<ul class="catagories">
+						<li><a class="showAll waves-effect waves-light btn-small">All</a></li>
+						<li><a class="showWebDev waves-effect waves-light btn-small">Web Dev</a></li>
+						<li><a class="showThreed waves-effect waves-light btn-small">Game Design</a></li>
+					</ul>
+				</div>
+			</div>
 
- <div class="content isOpen">
- 	<a class="button"></a>
- 	<div class="mainTitle">
-	 	<h1>Cedric Greutmann</h1>
+		</nav>
+	</section>
+
+	<div id="aboutSidePanel">
+		<div class="infomeWrapper">
+			<div class="info_img">
+				<img id="aboutimg" src="img/me.jpg">
+			</div>
+			<div id="outsideWrapper">
+				<div class="infome">
+					<ul>
+						<li>Name: Cedric Greutmann</li>
+						<li>Date of Birth: 10/07/1991</li>
+						<li>Nationality: Swiss/German</li>
+						<li>Languages: English and German</li>
+					</ul>
+				</div>
+				<div id="infome_insidewrapper">
+					<div id="aboutmeText">
+					<p>Cedric Greutmann was born in Zurich, Switzerland. Through the early years of education, he found a intrest in the digital design forms, self teaching most of the skills at this time through online resources. He then completed a BA in ICT at the Florida State University, where his passion resparked toward the digital media forms. Which pushed him to further pursue a desire in this field. This was complemented with a internship, with the IBM iX team in Singapore. <br><br>This experience brought him to apply and complete a Msc in Design and Digital Media at the University of Edinburgh. It is here that Cedric finally got to expierence expanded areas of the digital media field. He built on his web development/design ability. Explored a new area of 3D design, modeling and texturing, while also exploreing more in depth the field of visual design. <br><br>	</p>
+					</div>
+					<div id="resume">
+							<a href="cv.html" class="waves-effect waves-light btn-small">Resume/CV<!-- <img style="width: 20%" src="img/cv_img.png"> --></a>
+					</div>
+				</div>
+			</div>
 	 </div>
-	 	<div class="imgmain">
-	 		<img class="imgmain" src="img/snowboard.jpg">
-	 	</div>
- 	 <footer>website created by Cedric Greutmann copyright 2018</footer>
- </div>
-</div>
+	</div>
+	<!-- Gallery -->
+	<!-- <div class="port_wrapper"> -->
+		<div class="portfolio_grid">
+				<div class="portfolio_item threed animated fadeInDown">
+					<a class="cover" id="item1">
+						<img src="img/bunker1.png"/>
+					</a>
+				</div>
+			<div class="portfolio_item web animated fadeInDown">
+				<a class="cover" id="item2">
+					<img src="img/cb_4.png"/>
+				</a>
+			</div>
+			<div class="portfolio_item web animated fadeInDown">
+				<a class="cover" id="item3">
+					<img src="img/ironzoo_3.png"/>
+				</a>
+			</div>
+			<div class="portfolio_item threed animated fadeInDown">
+				<a class="cover" id="item4">
+					<img src="img/beebe_4.jpg"/>
+				</a>
+			</div>
+			<div class="portfolio_item threed animated fadeInDown">
+				<a class="cover" id="item5">
+					<img src="img/vr_1.jpg"/>
+				</a>
+			</div>
+	</div>
+	<div id="fullscreen">
+		<div id="fullnav">
+			<i id="close" class="medium material-icons md-light">cancel</i>
+		</div>
+		<div id="port_full1">
+			<div class="port_full_img">
+				<img src="img/bunker1.png"/>
+			</div>
+			<div class="full_info">
+				<div class="projectTitle"><h4>Where to Next? - Navigation through Environmental Cues in a Virtual Environemnt</h4>
+				</div>
+				<h4>About</h4>
+				<p class="description">
+					This dissertation project was the final piece to completing my Msc in Design and Digital media. I wanted to explore if it was possible to direct players of a video game through environment cues. To do this I created a interior level, in a underground bunker. This maze like tunnel system was supposed to be very confusing and disorientating. Through this level at certain points I had intersections where I purposly placed one of a few environmental cues. These were meant to either direct a player down the correct path, or deter them the players from the incorrect paths to the correct one. Once I had this level built I had players test the level to see what out of the cues I placed into the level actually work and which did not.
+						<br><br>
+					Overall the experience was very interesting as it was interesting to see the influence the different envirornmtal cues had on the players. Especially when looking at the background of the players with previous experiences with games and if that influenced them.
+				</p>
+				<h4>Roles</h4>
+				<p class="description">
+					Modeling, texturing of all assets in Maya and Substance Painter. Assembling modular assets into level in Unreal Engine. Integrating small interactions for players as well as player controls.
+				</p>
+				<h4>Link</h4>
+				<p class="description">
+					<a href="https://www.youtube.com/watch?v=qtj-u4eglg0&feature=youtu.be">Video Link </a>
+				</p>
+				<div class="more_images">
+					<img src="img/bunker3.png"/>
+					<img src="img/bunker4.png"/>
+					<img src="img/bunker5.png"/>
+					<img src="img/bunker6.png"/>
+					<img src="img/bunker7.png"/>
+					<img src="img/bunker8.png"/>
+				</div>
+			</div>
+		</div>
+		<div id="port_full2">
+			<div class="port_full_img">
+				<img src="img/cb_4.png"/>
+			</div>
+			<div class="full_info">
+				<div class="projectTitle"><h4>Cork and Board - Dynamic Webpage</h4>
+				</div>
+				<h4>About</h4>
+				<p class="description">
+					A project created in my MSc Design and Digital Media program at University of Edinburgh. The main aim here was gaining familiarity with dynamic pages. Creating databases and making websites display information from said database. Additionally as extra credit we also integrated a user account system with logins, profile pictures. This feature was to be expanded, but was not completed due to lack of time.
+					</BR></BR>This was done through PHP and MySQL. For the design of the site Bootstrap framework was used, allowing for responsive design workflow.
+				</p>
+				<h4>Roles</h4>
+				<p class="description">
+					HTML, CSS coding for site using Bootstrap framework. Also coded all backend (MYSQL and PHP).
+				</p>
+				<h4>Link</h4>
+				<p class="description">
+					<a href="https://playground.eca.ed.ac.uk/~s1672752/beta/">Site Link</a>
+				</p>
+			</div>
+		</div>
+		<div id="port_full3">
+			<div class="port_full_img">
+				<img src="img/ironzoo_3.png"/>
+			</div>
+			<div class="full_info">
+				<div class="projectTitle"><h4>IronZoo Productions Website and Poster</h4>
+				</div>
+				<h4>About</h4>
+				<p class="description">
+					For this pieces I was part of IronZoo Productions advertisement team. This small, student run productions company, needed a online presence besides their Facebook page. Giving them more of a professional outward face for potential clients.
+					<br><br>
+					The work consisted of a main company page, I also created a specific page for their newest production Chronos. For specific info about the series and particularly info on the premiere of the web series. Alongside this I developed a poster for the premiere of the series on Campus.
+					<br><br>
+					The site was more of a static page, meant to give information to visitors about the company, the members and their newest project Chronos. In addition to the web presence I also helped in creating a poster for the premiere of the show Chronos.
+				</p>
+				<h4>Roles</h4>
+				<p class="description">
+					HTML, CSS coding for site using bootstrap framework. Designed poster for premier of the Show using photoshop and illustrator.
+				</p>
+				<h4>Link</h4>
+				<p class="description">
+					<a href="https://youtu.be/00U5Q6uc6vk">Video Link </a>
+				</p>
+			</div>
+		</div>
+		<div id="port_full4">
+			<div class="port_full_img">
+				<img src="img/beebe_4.jpg"/>
+			</div>
+			<div class="full_info">
+				<div class="projectTitle"><h4>Starfish Novel - Beebe Station</h4>
+				</div>
+				<h4>About</h4>
+				<p class="description">
+					In this project we built a game level of a under water station, based of the novel Starfish (2000) by Peter Watts. This is a modular level, meaning the components of the base are seperate and can be easily modified to create new areas. Each person created their own models, but sharing of the assets was permitted in the second submission(making sure to give credit where due).
+					<br/>
+					From the reading I imagined the base to be very small and crammed. Giving the player a bit of a claustraphobic feeling when exploring. The idea behind the project was to only create a 3D space that could be explored. However while desiging the level, I realized I was missing something a gameplay mechanic. So I added a simple mechanic of finding the memory tapes throughout the station. Similar to other games of finding collectables.
+					<br />
+					Once the player had found the tapes could they pass the level and continue on to a potential future level.For this project I also worked with a other student in the sound program, to create the sounds the station gives off, as well as the recordings of the voice on the tapes spread across the station.
+				</p>
+				<h4>Roles</h4>
+				<p class="description">
+					Unity Engine programming, 3D models and texturing. Sound design work by Gabrielle Haley.
+				</p>
+				<h4>Link</h4>
+				<p class="description">
+					<a href="https://youtu.be/00U5Q6uc6vk">Video Link </a>
+				</p>
+			</div>
+		</div>
+		<div id="port_full5">
+			<div class="port_full_img">
+				<img src="img/vr_1.jpg"/>
+			</div>
+			<div class="full_info">
+				<div class="projectTitle"><h4>Historic Lens: Edinburgh VR</h4>
+				</div>
+				<h4>About</h4>
+				<p class="description">
+					In this project I wanted to create a VR experience. I recreated a historic map of Edinburgh in 3D space that can be explored with a Vive VR headset. Its main feature is that it shows how the city has grown through three different time periods. This experience is based off a map found in the National Library archives. The map consisted of a combination of different time period maps, with color coded streets and buildings to show when certain areas were built.
+					<br><br>
+					I used this map and traced abstract 3D models off of it. To create the basic layout of the city. To add to the map I then created more detailed models of certain more iconic buildings, which in VR, can be picked up using the vive controllers and investigated closer.
+					<br><br>
+					The 3D assets were created in Maya 2016, and textured in Substance Painter. I finally took the models and programmed all the VR experience in the Unity game engine.
+				</p>
+				<h4>Roles</h4>
+				<p class="description">
+					3D Modeling/texturing (Maya and Substance Painter), Unity Engine programing.
+				</p>
+				<h4>Link</h4>
+				<p class="description">
+					<a href="https://www.youtube.com/watch?v=qtj-u4eglg0">Video Link </a>
+				</p>
+			</div>
+		</div>
+	</div>
+			<script>
+			$(document).ready(function(){
+				$('.dropdown-trigger').dropdown();
+
+				if(jQuery(window).width() < 500) {
+					$("nav.nav-extended").css({height: $(window).height()});
+					console.log($(window).height());
+				 }
+				window.onbeforeunload = function () {
+								window.scrollTo(0,0);
+				};
+				$("#about").click(function(){
+					if(jQuery(window).width() > 1200) {
+						if ($("#aboutSidePanel").is(':hidden')){
+						 $(".portfolio_grid").hide();
+						 $("#aboutSidePanel").show();
+						 $("html, body").animate({ scrollTop: $(window).height()}, 800, "linear");
+					 }
+					 else {
+						 $("#aboutSidePanel").hide();
+						 $(".portfolio_grid").show();
+					 }
+					}
+					else if(jQuery(window).width() < 1200){
+						if ($("#aboutSidePanel").is(':hidden')){
+						 $(".portfolio_grid").hide();
+						 $("#aboutSidePanel").show();
+						 var scrollSmall = $(window).height() - 100;
+						 console.log(scrollSmall);
+
+						 $("html, body").animate({ scrollTop: scrollSmall}, 800, "linear");
+					 }
+					 else {
+						 $("#aboutSidePanel").hide();
+						 $(".portfolio_grid").show();
+					 }
+					}
+
+				});
+				// $('.sidenav').sidenav();
+
+
+				$("#close").click(function(){
+					// var screenTop = $(document).scrollTop() - $(document).scrollTop();
+					$("body").removeClass("noscroll");
+					$("#fullscreen").fadeOut().css({position: 'none'});
+					// $("#fullscreen").css({position: 'fixed'});
+				if ($('#port_full1').is(':visible')){
+						$("#port_full1").fadeOut();
+				}
+				else if ($('#port_full2').is(':visible')){
+					$("#port_full2").fadeOut();
+				}
+				else if ($('#port_full3').is(':visible')){
+					$("#port_full3").fadeOut();
+				}
+				else if ($('#port_full4').is(':visible')){
+					$("#port_full4").fadeOut();
+				}
+				else if ($('#port_full5').is(':visible')){
+					$("#port_full5").fadeOut();
+				}
+				});
+
+				  $("#item1").click(function(){
+					var screenTop = $(document).scrollTop() - $(document).scrollTop() + '65px';
+
+					$("body").addClass("noscroll");
+				  $("#fullscreen").fadeIn().css({position: 'fixed'});
+					document.getElementById('fullscreen').scrollTop =0;
+
+					// $("#fullscreen").css({position: 'fixed'});
+					$("#port_full1").show().css('top', screenTop);
+				  });
+
+					$("#item2").click(function(){
+						var screenTop = $(document).scrollTop() - $(document).scrollTop() + '65px';
+
+						$("body").addClass("noscroll");
+						$("#fullscreen").fadeIn().css({position: 'fixed'});
+						document.getElementById('fullscreen').scrollTop =0;
+						// $("#fullscreen").css({position: 'fixed'});
+						$("#port_full2").show().css('top', screenTop);
+
+				  });
+
+					$("#item3").click(function(){
+						var screenTop = $(document).scrollTop() - $(document).scrollTop() + '65px';
+						$("body").addClass("noscroll");
+						$("#fullscreen").fadeIn().css({position: 'fixed'});
+						document.getElementById('fullscreen').scrollTop =0;
+
+						// $("#fullscreen").css({position: 'fixed'});
+						$("#port_full3").show().css('top', screenTop);
+					});
+
+					$("#item4").click(function(){
+						var screenTop = $(document).scrollTop() - $(document).scrollTop() + '65px';
+						$("body").addClass("noscroll");
+						$("#fullscreen").fadeIn().css({position: 'fixed'});
+						document.getElementById('fullscreen').scrollTop =0;
+
+						// $("#fullscreen").css({position: 'fixed'});
+						$("#port_full4").show().css('top', screenTop);
+					});
+					$("#item5").click(function(){
+						var screenTop = $(document).scrollTop() - $(document).scrollTop() + '65px';
+						$("body").addClass("noscroll");
+						$("#fullscreen").fadeIn().css({position: 'fixed'});
+						document.getElementById('fullscreen').scrollTop =0;
+
+						// $("#fullscreen").css({position: 'fixed'});
+						$("#port_full5").show().css('top', screenTop);
+					});
+
+					$(".showAll").click(function showAllCat()
+					{
+						$(".portfolio_grid").show();
+						$("#aboutSidePanel").hide();
+					 $(".portfolio_grid").children().fadeIn();
+					 $("html, body").animate({ scrollTop: $(document).height() }, 800, "linear");
+				 	});
+
+					$(".showWebDev").click(function showOnlyCat(web)
+					{
+						$(".portfolio_grid").show();
+					$("#aboutSidePanel").hide();
+					 $(".portfolio_grid").children().hide().filter(".web").fadeIn();
+					 $("html, body").animate({ scrollTop: $(document).height() }, 800, "linear");
+					 // console.log('test');
+				 	});
+
+					$(".showThreed").click(function showOnlyCat(threed)
+					{
+						$(".portfolio_grid").show();
+					$("#aboutSidePanel").hide();
+					 $(".portfolio_grid").children().hide().filter(".threed").fadeIn();
+					 $("html, body").animate({ scrollTop: $(document).height() }, 800, "linear");
+
+					 // console.log('test');
+				 	});
+			});
+
+
+
+		 //
+			// $("#close").click(function(){
+			//  var screenTop = $(document).scrollTop() - $(document).scrollTop();
+			//  $("body").removeClass("noscroll");
+			//  $("#fullscreen").animate({opacity: 0}, 1500).css({position: 'none'});
+		 //
+		 // });
+
+</script>
+
 </body>
 </html>
