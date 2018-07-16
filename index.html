@@ -27,7 +27,7 @@
 	</script>
 </head>
 <body>
-	<section>
+	<section id="header_nav">
 		<nav class="nav-full-header nav-extended">
 			<div class="nav-background">
 				<div class="img_bg"></div>
@@ -82,7 +82,15 @@
 				</div>
 				<div id="infome_insidewrapper">
 					<div id="aboutmeText">
-					<p>Cedric Greutmann was born in Zurich, Switzerland. Through the early years of education, he found a intrest in the digital design forms, self teaching most of the skills at this time through online resources. He then completed a BA in ICT at the Florida State University, where his passion resparked toward the digital media forms. Which pushed him to further pursue a desire in this field. This was complemented with a internship, with the IBM iX team in Singapore. <br><br>This experience brought him to apply and complete a Msc in Design and Digital Media at the University of Edinburgh. It is here that Cedric finally got to expierence expanded areas of the digital media field. He built on his web development/design ability. Explored a new area of 3D design, modeling and texturing, while also exploreing more in depth the field of visual design. <br><br>	</p>
+					<p>
+						Hey and welcome to my site!
+					</p>
+					<p>
+						My name is Cedric and I was born in Zurich, Switzerland. Through my early years of education, I found a intrest in the digital design forms, self teaching most of my skills at this time through online resources. This desire later brought me to complete a BA in ICT at the Florida State University. Which in turn pushed me to further pursue this field. To complemente this I completed a internship, with the IBM iX team in Singapore.
+					</p>
+					<p>
+						This experience brought me to apply and complete a Msc in Design and Digital Media at the University of Edinburgh. It is here that I finally got to expierence the expanded areas of the digital media field. He built on his web development/design ability. Explored a new area of 3D design: modeling and texturing. While also exploreing gathering and strengtheing visual design elements.
+					</p>
 					</div>
 					<div id="resume">
 							<a href="cv.html" class="waves-effect waves-light btn-small">Resume/CV<!-- <img style="width: 20%" src="img/cv_img.png"> --></a>
@@ -94,28 +102,45 @@
 	<!-- Gallery -->
 	<!-- <div class="port_wrapper"> -->
 		<div class="portfolio_grid">
-				<div class="portfolio_item threed animated fadeInDown">
-					<a class="cover" id="item1">
-						<img src="img/bunker1.png"/>
-					</a>
-				</div>
-			<div class="portfolio_item web animated fadeInDown">
-				<a class="cover" id="item2">
-					<img src="img/cb_4.png"/>
-				</a>
-			</div>
-			<div class="portfolio_item web animated fadeInDown">
+			<div class="portfolio_item web">
 				<a class="cover" id="item3">
+					<h1 class="porttitle">IronZoo Productions</h1>
+					<div class="overlayPortfolio"></div>
 					<img src="img/ironzoo_3.png"/>
 				</a>
 			</div>
-			<div class="portfolio_item threed animated fadeInDown">
+			<div class="portfolio_item web">
+				<a class="cover" id="item2">
+					<h1 class="porttitle">Cork & Board</h1>
+					<div class="overlayPortfolio"></div>
+					<img src="img/cb_4.png"/>
+				</a>
+			</div>
+			<div class="portfolio_item web">
+				<a class="cover" id="item6">
+					<h1 class="porttitle">Gif Search App</h1>
+					<div class="overlayPortfolio"></div>
+					<img src="img/jiffy_2.png"/>
+				</a>
+			</div>
+			<div class="portfolio_item threed">
+				<a class="cover" id="item1">
+					<h1 class="porttitle">Dissertation: Where to Next?</h1>
+					<div class="overlayPortfolio"></div>
+					<img src="img/bunker1.png"/>
+				</a>
+			</div>
+			<div class="portfolio_item threed">
 				<a class="cover" id="item4">
+					<h1 class="porttitle">Beebe Station</h1>
+					<div class="overlayPortfolio"></div>
 					<img src="img/beebe_4.jpg"/>
 				</a>
 			</div>
-			<div class="portfolio_item threed animated fadeInDown">
+			<div class="portfolio_item threed">
 				<a class="cover" id="item5">
+					<h1 class="porttitle">Historic Edinburgh VR</h1>
+					<div class="overlayPortfolio"></div>
 					<img src="img/vr_1.jpg"/>
 				</a>
 			</div>
@@ -211,7 +236,7 @@
 				</div>
 				<h4>About</h4>
 				<p class="description">
-					In this project we built a game level of a under water station, based of the novel Starfish (2000) by Peter Watts. This is a modular level, meaning the components of the base are seperate and can be easily modified to create new areas. Each person created their own models, but sharing of the assets was permitted in the second submission(making sure to give credit where due).
+					In this project we were asked to build a under water station described in the Novel <i>Starfish</i> (2000) by Peter Watts. Based off of this we then created a 3D base in the unity engine that was explorable. Modeling the pieces of the base in Maya and texturing them. The group also created individual assets but, were for the second part allowed to use assets from the whole group with giving credit were due.
 					<br/>
 					From the reading I imagined the base to be very small and crammed. Giving the player a bit of a claustraphobic feeling when exploring. The idea behind the project was to only create a 3D space that could be explored. However while desiging the level, I realized I was missing something a gameplay mechanic. So I added a simple mechanic of finding the memory tapes throughout the station. Similar to other games of finding collectables.
 					<br />
@@ -249,6 +274,29 @@
 				<h4>Link</h4>
 				<p class="description">
 					<a href="https://www.youtube.com/watch?v=qtj-u4eglg0">Video Link </a>
+				</p>
+			</div>
+		</div>
+		<div id="port_full6">
+			<div class="port_full_img">
+				<img src="img/jiffy_2.png"/>
+			</div>
+			<div class="full_info">
+				<div class="projectTitle"><h4>Gif Search App (React)</h4>
+				</div>
+				<h4>About</h4>
+				<p class="description">
+					This is my first React.js app that I created. I created it while following a React course. The funcion of this app is to allow users to search for gifs based on a term they enter into the center text input field. This gif is then displayed, similarly to a deck of playing cards, in the center of the screen. The user can then search for another gif with the same search term by hitting enter again.
+					<br><br>
+					This App utelises the GIPHY Api to search. This call responsed with a 25 gif array. The app then randomly chooses one of the gifs in this array, and pulls it out and displays it.
+				</p>
+				<h4>Roles</h4>
+				<p class="description">
+					Front-end development and Front-end designer
+				</p>
+				<h4>Link</h4>
+				<p class="description">
+					<a href="https://jiffyapp.netlify.com/?_ga=2.126577997.1901329022.1531745621-1816028504.1531310299">Site Link </a>
 				</p>
 			</div>
 		</div>
@@ -315,6 +363,9 @@
 				else if ($('#port_full5').is(':visible')){
 					$("#port_full5").fadeOut();
 				}
+				else if ($('#port_full6').is(':visible')){
+					$("#port_full6").fadeOut();
+				}
 				});
 
 				  $("#item1").click(function(){
@@ -358,16 +409,28 @@
 						// $("#fullscreen").css({position: 'fixed'});
 						$("#port_full4").show().css('top', screenTop);
 					});
+
 					$("#item5").click(function(){
 						var screenTop = $(document).scrollTop() - $(document).scrollTop() + '65px';
 						$("body").addClass("noscroll");
 						$("#fullscreen").fadeIn().css({position: 'fixed'});
 						document.getElementById('fullscreen').scrollTop =0;
-
 						// $("#fullscreen").css({position: 'fixed'});
 						$("#port_full5").show().css('top', screenTop);
 					});
 
+					$("#item6").click(function(){
+						var screenTop = $(document).scrollTop() - $(document).scrollTop() + '65px';
+						$("body").addClass("noscroll");
+						$("#fullscreen").fadeIn().css({position: 'fixed'});
+						document.getElementById('fullscreen').scrollTop =0;
+						// $("#fullscreen").css({position: 'fixed'});
+						$("#port_full6").show().css('top', screenTop);
+					});
+
+
+
+// FUNCTIONS FOR PULLING CATAGORIES//
 					$(".showAll").click(function showAllCat()
 					{
 						$(".portfolio_grid").show();
