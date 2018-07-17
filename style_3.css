@@ -363,8 +363,7 @@ nav.nav-extended
 
 #aboutimg
 {
-  height: 50%;
-  margin: 20px;
+  width: 90%;
 }
 
 .btn, .btn-large, .btn-small
@@ -379,9 +378,9 @@ nav.nav-extended
 
 .info_img
 {
-  flex: 2;
   display: flex;
   justify-content: center;
+  align-items: center;
 
 }
 
@@ -389,6 +388,7 @@ nav.nav-extended
 {
   display: flex;
   flex-direction: column;
+  flex: 3;
 }
 
 .infomeWrapper
