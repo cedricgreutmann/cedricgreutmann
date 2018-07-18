@@ -121,6 +121,7 @@ nav.nav-extended
 {
   display: flex;
   z-index: 2;
+  flex: 1;
 }
 
 .catagorieswrapper
@@ -128,6 +129,18 @@ nav.nav-extended
   z-index: 10;
   position: relative;
   margin: 12px;
+}
+
+#myLinks
+{
+  flex: 1;
+  z-index: 2;
+  margin-top: 25px;
+}
+
+#cat_container
+{
+  display: flex;
 }
 
 
@@ -147,7 +160,6 @@ nav.nav-extended
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   position: relative;
   /* width: 100%; */
-  z-index: 200;
   overflow: hidden;
 }
 
@@ -237,8 +249,6 @@ nav.nav-extended
     overflow: scroll;
 }
 
-
-
 #port_full1
 {
   /* min-height: 100%; */
@@ -303,7 +313,54 @@ nav.nav-extended
   margin: 5% 15% 10% 15%;
   background-color: #182f45;
 }
+#port_full7
+{
+  /* min-height: 100%; */
+  display: none;
+  position: absolute;
+  left: 0;
+  color: white;
+  margin: 5% 15% 10% 15%;
+  background-color: #182f45;
+}
 
+@media only screen and (max-width: 425px) {
+    #port_full1
+    {
+      margin: 5% 0% 15%;
+    }
+    #port_full2
+    {
+      margin: 5% 0% 15%;
+    }
+    #port_full3
+    {
+      margin: 5% 0% 15%;
+    }
+    #port_full4
+    {
+      margin: 5% 0% 15%;
+    }
+    #port_full5
+    {
+      margin: 5% 0% 15%;
+    }
+    #port_full6
+    {
+      margin: 5% 0% 15%;
+    }
+    #port_full7
+    {
+      margin: 5% 0% 15%;
+    }
+
+    .port_full_img img
+    {
+      left: 0 !important;
+      width: 70% !important;
+    }
+
+}
 .port_full_img img
 {
   width: 50%;
@@ -358,7 +415,7 @@ nav.nav-extended
 {
   display: none;
   position: relative;
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 #aboutimg
