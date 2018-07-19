@@ -60,6 +60,7 @@
 							<li><a class="showAll">All</a></li>
 							<li><a class="showWebDev">Web Dev</a></li>
 							<li><a class="showThreed">Game Design</a></li>
+							<li><a class="showVisual">Graphics Design</a></li>
 						</ul>
 					</div>
 					<div id="cat_container">
@@ -67,6 +68,7 @@
 							<li><a class="showAll waves-effect waves-light btn-small">All</a></li>
 							<li><a class="showWebDev waves-effect waves-light btn-small">Web Dev</a></li>
 							<li><a class="showThreed waves-effect waves-light btn-small">Game Design</a></li>
+							<li><a class="showVisual waves-effect waves-light btn-small">Graphics Design</a></li>
 						</ul>
 
 					</div>
@@ -502,6 +504,14 @@
 					$("#aboutSidePanel").hide();
 					 $(".portfolio_grid").children().hide().filter(".threed").fadeIn();
 					 $("html, body").animate({ scrollTop: $(document).height() }, 800, "linear");
+
+					 });
+					 $(".showVisual").click(function showOnlyCat(visual)
+ 					{
+ 						$(".portfolio_grid").show();
+ 					$("#aboutSidePanel").hide();
+ 					 $(".portfolio_grid").children().hide().filter(".visual").fadeIn();
+ 					 $("html, body").animate({ scrollTop: $(document).height() }, 800, "linear");
 
 					 // console.log('test');
 				 	});
